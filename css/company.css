@@ -1,0 +1,143 @@
+body {
+    display: flex;
+    justify-content: center;
+    background-color: #101010;
+}
+
+.company_card {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    width: 38%;
+    box-shadow: 4px 5px 45px 0px #000000;
+    border-radius: 20px;
+    margin-top: 70px;
+    z-index: 2;
+}
+
+.company_elements {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-evenly;
+}
+
+.company_price {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    background-color: #101010;
+    border-radius: 20px;
+    border-top-left-radius: 0px;
+    border-bottom-left-radius: 0px;
+    border-left: 250px;
+    padding: 10px;
+}
+
+.company_price h1, h2 {
+    font-size: 25px;
+    padding: 0px, 10px;
+    white-space: nowrap;
+}
+
+.company_price h2 {
+    margin-top: 20px;
+}
+
+.company_price img {
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+}
+
+.company_chart{
+    width: 70%;
+    height: 100%;
+    background-color: #101010;
+    border-radius: 20px;
+    border-top-right-radius: 0px;
+    border-bottom-right-radius: 0px;
+    border-bottom-left-radius: 0px;
+    padding: 40px;
+}
+
+.company_infos {
+    display: flex;
+    flex-direction: column;
+    border-radius: 20px;
+    padding: 0px;
+    border-top-left-radius: 0px;
+    border-top-right-radius: 0px;
+    background: linear-gradient(#101010, #060606);
+}
+
+.company_name h1 {
+    font-size: 4em;
+    font-weight: 900;
+    color: #fff;
+    margin: 0;
+}
+
+.company_name h2 {
+    font-size: 1em;
+    font-weight: 900;
+    color: #fff;
+    text-transform: uppercase;
+}
+
+.company_description {
+    font-size: 1em;
+    color: #fff;
+    padding: 0px 30px;
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+
+.company_link {
+    display: flex;
+    justify-content: center;
+    color: #fff;
+    margin-bottom: 30px;
+    text-decoration: none;
+}
+
+.company_link:hover {
+    color: #fff;
+    text-decoration: underline;
+}
+
+.progress_linear {
+    position: absolute;
+    top: 53px;
+    width: 38%;
+    height: 40px;
+    border-top-right-radius: 20px;
+    border-top-left-radius: 20px;
+    background-color: #101010;
+}
+
+.progress_linear::-webkit-progress-bar {
+    background-color: transparent;
+}
+
+.progress_linear:indeterminate {
+    background-size: 200% 100%;
+    background-image: linear-gradient(to right, transparent 50%, currentColor 50%, currentColor 60%, transparent 60%, transparent 71.5%, currentColor 71.5%, currentColor 84%, transparent 84%);
+    animation: progress_linear 2s linear;
+}
+
+@keyframes progress_linear {
+    0% {
+        background-size: 200% 100%;
+        background-position: left -31.25% top 0%;
+    }
+    50% {
+        background-size: 800% 100%;
+        background-position: left -49% top 0%;
+    }
+    100% {
+        background-size: 400% 100%;
+        background-position: left -102% top 0%;
+    }
+}
